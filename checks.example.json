@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "name": "ssh",
+      "type": "tcp",
+      "host": "127.0.0.1",
+      "port": 22,
+      "timeout": 2
+    },
+    {
+      "name": "example",
+      "type": "http",
+      "url": "https://example.com",
+      "expect": 200
+    },
+    {
+      "name": "sshd",
+      "type": "systemd",
+      "unit": "ssh.service"
+    }
+  ]
+}
